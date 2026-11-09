@@ -1,6 +1,6 @@
 # Pulse changelog
 
-## 1.0.0 — first public release
+## 1.0.0 — November 9, 2026 — first public release
 
 **Games**
 - 20 Neo Geo games from GOG.com, shown as GameCards (in random order on each visit).
@@ -19,6 +19,9 @@
 
 **In-game menu**
 - Save / Load with clear feedback, volume slider, controller setup sheet.
+
+**Session report**
+- Report form with neutral wording.
 
 **Mobile**
 - Neo Geo virtual touch controller; phones play in landscape mode.
