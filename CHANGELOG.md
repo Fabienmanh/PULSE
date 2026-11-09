@@ -1,5 +1,19 @@
 # Pulse changelog
 
+## 1.3.0 — November 9, 2026
+
+**Online play**
+- 18 games now verified for two-player online play (no desync on LAN or lossy Wi-Fi), up from 14.
+- Blazing Star is now playable by two players, online too.
+
+## 1.2.2 — November 9, 2026
+
+- In-game screen: the game sits on the left, with Share Moment and the menu in the right-hand column.
+
+## 1.2.1 — November 9, 2026
+
+- In-game screen: Share Moment and the menu move to the right-hand black band on wide screens.
+
 ## 1.2.0 — November 9, 2026
 
 **Ghost**
