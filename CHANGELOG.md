@@ -1,5 +1,11 @@
 # Pulse changelog
 
+## 1.1.0 — November 9, 2026
+
+**Ghost**
+- New "Load a Ghost" button: race against another player's Ghost file.
+- "Download my Ghost" now saves your time and name with your run, ready to send to a friend.
+
 ## 1.0.0 — November 9, 2026 — first public release
 
 **Games**
