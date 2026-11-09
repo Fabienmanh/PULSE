@@ -17,6 +17,9 @@
 **Share Moment**
 - A short link that drops a friend into the same moment of the game, to play it themselves.
 
+**In-game menu**
+- Save / Load with clear feedback, volume slider, controller setup sheet.
+
 **Mobile**
 - Neo Geo virtual touch controller; phones play in landscape mode.
 
