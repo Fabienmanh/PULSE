@@ -1,5 +1,10 @@
 # Pulse changelog
 
+## 1.2.0 — November 9, 2026
+
+**Ghost**
+- "Download my Ghost" works from the very first seconds: save your run in progress and send it to a friend, who races your Ghost for as far as you went.
+
 ## 1.1.0 — November 9, 2026
 
 **Ghost**
