@@ -1,5 +1,10 @@
 # Pulse changelog
 
+## 1.4.0 — November 10, 2026
+
+**Ghost**
+- Cleaner Ghost in Metal Slug: only the soldier is shown, with no square frame or scenery around it.
+
 ## 1.3.0 — November 9, 2026
 
 **Online play**
