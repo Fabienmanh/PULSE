@@ -1,0 +1,44 @@
+name: Publish a Release
+
+# Manual trigger (Actions tab → "Publish a Release" → Run workflow).
+# Creates the vX.Y.Z tag and the GitHub Release, using the X.Y.Z section of CHANGELOG.md.
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag to create, e.g. v1.4.0"
+        required: true
+      commit:
+        description: "Commit SHA to tag. Empty = latest commit on main."
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Create the tag and the Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          COMMIT: ${{ inputs.commit }}
+        run: |
+          set -euo pipefail
+          [[ "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "Invalid tag: $TAG (expected vX.Y.Z)"; exit 1; }
+          VERSION="${TAG#v}"
+          TARGET="${COMMIT:-$(git rev-parse origin/main)}"
+          git cat-file -e "$TARGET^{commit}" || { echo "Commit not found: $TARGET"; exit 1; }
+          if gh release view "$TAG" >/dev/null 2>&1; then echo "Release $TAG already exists."; exit 1; fi
+          awk -v v="$VERSION" '
+            $0 ~ "^## " v " " { on=1; next }
+            on && /^## / { exit }
+            on { print }
+          ' CHANGELOG.md | sed '/./,$!d' > notes.md
+          [ -s notes.md ] || { echo "No $VERSION section in CHANGELOG.md"; exit 1; }
+          cat notes.md
+          gh release create "$TAG" --target "$TARGET" --title "$TAG" --notes-file notes.md
