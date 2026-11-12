@@ -9,7 +9,7 @@ Pulse runs Neo Geo games directly in your browser, on desktop, tablet and smartp
 ## Features
 
 - **Play instantly**: pick a GameCard, import your game, hit *Play Now.*
-- **Online two-player**: 35 games playable online with a friend, at 60 fps.
+- **Online two-player**: 29 games playable online with a friend, at 60 fps.
 - **Ghost** (Metal Slug): race against your own ghost, beat your best time, and send a challenge link to a friend.
 - **Share Moment**: share a link that drops a friend into the exact moment you were playing, so they can take their turn.
 - **On mobile**: a Neo Geo touch controller, in landscape mode.
