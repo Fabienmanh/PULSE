@@ -1,5 +1,19 @@
 # Pulse changelog
 
+## 1.5.1 — November 10, 2026
+
+**Games**
+- New: Real Bout Fatal Fury 2: The Newcomers and Ironclad.
+- New GameCard for Super Sidekicks: the pitch, the stands and the selection screens now display correctly.
+- Every new GameCard links to its GOG page, so you can buy the game there and play with your own copy.
+
+## 1.5.0 — November 10, 2026
+
+**Games**
+- 12 new Neo Geo games from GOG join the catalog: Metal Slug 2, King of the Monsters, Alpha Mission II, 3 Count Bout, Crossed Swords, Ghost Pilots, Ninja Commando, Sengoku, Soccer Brawl, The Super Spy, Over Top and Mutation Nation.
+- 9 of them are verified for two-player online play.
+- The Super Spy now starts correctly.
+
 ## 1.4.0 — November 10, 2026
 
 **Ghost**
