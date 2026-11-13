@@ -1,5 +1,16 @@
 # Pulse changelog
 
+## 1.6.0 — November 13, 2026
+
+**Competition (Metal Slug)**
+- New Competition button: race against a Ghost or go for a timed Run, without restarting the game. The timer is shown at the mission banner.
+- Every run can be checked by replaying it, so times can be trusted.
+- New local leaderboard for Metal Slug mission 1: submit your run, pick a name, and race the Ghost of the number one.
+
+**Playing**
+- Smoother, more responsive display in solo play.
+- Pulse now focuses entirely on Neo Geo.
+
 ## 1.5.1 — November 10, 2026
 
 **Games**
